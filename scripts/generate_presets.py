@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import os
 import shutil
+from datetime import date
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 SITE_URL = "https://maestro24.github.io/jasolab"
@@ -180,10 +181,11 @@ def main():
             f.write(html)
 
     # sitemap (고정 페이지 + 프리셋)
+    today = date.today().isoformat()
     urls = [f"{SITE_URL}/", f"{SITE_URL}/count.html", f"{SITE_URL}/guide.html"]
     urls += [SITE_URL + "/" + p.replace("index.html", "") for p in sorted(pages)]
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-           + "\n".join(f"<url><loc>{u}</loc></url>" for u in urls) + "\n</urlset>\n")
+           + "\n".join(f"<url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "\n</urlset>\n")
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(xml)
     print(f"[presets] 페이지 {len(pages)}개 + sitemap {len(urls)} URL")
