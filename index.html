@@ -35,6 +35,13 @@
   }
   </script>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* 워크스페이스는 컨테이너가 넓어(1200px) 레일 위치·표시 조건 별도 */
+    .side-l { left: calc(50% - 784px); }
+    .side-r { left: calc(50% + 624px); }
+    .side-rail { display: none; }
+    @media (min-width: 1600px) { .side-rail { display: block; } }
+  </style>
 </head>
 <body>
   <div class="ws">
@@ -108,6 +115,23 @@
       </section>
     </div>
 
+  <aside class="promo" data-coupang>
+    <div class="coupang-wrap">
+      <a href="https://link.coupang.com/a/flCfhuxEJM" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/1006097?trackingCode=AF8748009&subId=&traceId=V0-301-879dd1202e5c73b2-I1006097&w=728&h=90" alt="쿠팡 파트너스 배너" style="max-width:100%;height:auto" loading="lazy"></a>
+    </div>
+    <p class="promo-disclosure">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+  </aside>
+  <script>
+    setTimeout(function () {
+      document.querySelectorAll('[data-coupang]').forEach(function (el) {
+        var f = el.querySelector('iframe');
+        var m = el.querySelector('img');
+        var ok = (f && f.getBoundingClientRect().height >= 10) || (m && m.complete && m.naturalWidth > 0);
+        if (!ok) el.hidden = true;
+      });
+    }, 4000);
+  </script>
+
     <footer class="footer">
       <span>자소서 본문은 서버로 전송되지 않으며 이 브라우저(localStorage)에만 저장됩니다.</span>
       <a href="count.html">글자수 세기</a>
@@ -116,5 +140,12 @@
     </footer>
   </div>
   <script type="module" src="js/workspace.js"></script>
+  <div class="side-rail side-l" data-coupang>
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>new PartnersCoupang.G({ id: 1006093, template: "carousel", trackingCode: "AF8748009", width: "160", height: "600", tsource: "" });</script>
+  </div>
+  <div class="side-rail side-r" data-coupang>
+    <script>new PartnersCoupang.G({ id: 1006093, template: "carousel", trackingCode: "AF8748009", width: "160", height: "600", tsource: "" });</script>
+  </div>
 </body>
 </html>
