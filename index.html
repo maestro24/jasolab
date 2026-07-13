@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2P73L29BH7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2P73L29BH7');
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자소서랩 — 회사별 자소서 문항 관리, 글자수·바이트·버전까지</title>
+  <meta name="description" content="여러 회사 자소서를 한 곳에서. 문항별 글자수(공백·바이트·원고지) 실시간 확인, 기업별 글자수 프리셋, 버전 스냅샷, 마감일 관리 — 전부 브라우저에만 저장되는 무료 도구." />
+  <link rel="canonical" href="https://maestro24.github.io/jasolab/" />
+  <meta property="og:title" content="자소서랩 — 자소서 문항 관리 작업대" />
+  <meta property="og:description" content="회사별 문항 관리 + 글자수 3종 + 버전 스냅샷. 서버 전송 없음." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maestro24.github.io/jasolab/" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="theme-color" content="#f8f7fc" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23A78BFA'/><stop offset='1' stop-color='%236D3EE0'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><rect x='24' y='20' width='52' height='60' rx='8' fill='white' opacity='.95'/><rect x='32' y='32' width='36' height='5' rx='2.5' fill='%23A78BFA'/><rect x='32' y='44' width='36' height='5' rx='2.5' fill='%23d5c8f7'/><rect x='32' y='56' width='24' height='5' rx='2.5' fill='%23d5c8f7'/></svg>" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "자소서랩",
+    "url": "https://maestro24.github.io/jasolab/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "inLanguage": "ko",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+    "description": "회사별 자소서 문항 관리 도구 — 글자수·바이트·원고지 실시간 확인, 기업 프리셋, 버전 스냅샷, 마감일 관리. 데이터는 브라우저에만 저장."
+  }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ws">
+    <header class="header">
+      <a class="brand" href="index.html">📝 자소서랩</a>
+      <nav class="nav">
+        <button id="btn-sidebar" aria-label="목록 토글">☰ 목록</button>
+        <a href="count.html">글자수 세기</a>
+        <a href="presets/index.html">기업 프리셋</a>
+        <a href="guide.html">가이드</a>
+        <button id="btn-export">⬇ 백업</button>
+        <button id="btn-import">⬆ 복원</button>
+        <input type="file" id="file-import" accept=".json" hidden />
+      </nav>
+    </header>
+
+    <div class="ws-body">
+      <!-- 사이드바: 회사/문항 트리 -->
+      <aside class="sidebar" id="sidebar">
+        <div class="card" style="padding:12px">
+          <input class="input" id="in-search" placeholder="🔍 내 답변 검색 (예: 협업)" />
+          <div id="search-results" style="margin-top:6px"></div>
+        </div>
+        <div id="company-tree"></div>
+        <div class="card add-row" style="padding:12px">
+          <div style="display:flex;gap:6px">
+            <input class="input" id="in-new-company" placeholder="회사 이름" />
+            <button class="btn btn-sm" id="btn-add-company">추가</button>
+          </div>
+          <p class="hint" style="margin-top:6px">모든 데이터는 이 브라우저에만 저장돼요. 기기를 바꾸기 전엔 꼭 ⬇ 백업!</p>
+        </div>
+      </aside>
+
+      <!-- 에디터 -->
+      <section class="editor-pane" id="editor-pane">
+        <div class="empty" id="editor-empty">
+          왼쪽에서 회사를 추가하고 문항을 만들어 시작하세요.<br/><br/>
+          <b>자소서랩이 해주는 것</b><br/>
+          글자수·바이트·원고지 동시 확인 · 기업별 글자수 프리셋 · 버전 스냅샷 · 마감일 D-day
+        </div>
+        <div id="editor" hidden>
+          <div class="card" style="padding:14px">
+            <div class="editor-top">
+              <input class="input" id="q-title" placeholder="문항 제목 (예: 지원동기)" />
+              <div class="limit-box">
+                <select class="input" id="q-preset"><option value="">프리셋…</option></select>
+                <input class="input" id="q-limit" type="number" min="0" placeholder="제한" />
+                <select class="input" id="q-unit">
+                  <option value="chars_with_space">자 (공백포함)</option>
+                  <option value="chars_no_space">자 (공백제외)</option>
+                  <option value="bytes">바이트</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <textarea class="editor" id="q-content" placeholder="여기에 자소서를 작성하세요. 입력하는 즉시 자동 저장됩니다."></textarea>
+          <div class="counter-bar" id="counter-bar"></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn btn-sm btn-ghost" id="btn-snapshot">📌 스냅샷 저장</button>
+            <button class="btn btn-sm btn-ghost" id="btn-snaplist">🕐 버전 기록</button>
+            <button class="btn btn-sm btn-ghost" id="btn-copy">📋 본문 복사</button>
+            <button class="btn btn-sm btn-ghost" id="btn-txt">⬇ .txt</button>
+            <span style="flex:1"></span>
+            <button class="btn btn-sm btn-danger" id="btn-del-q">문항 삭제</button>
+          </div>
+          <div class="card" id="snap-panel" hidden>
+            <h3 style="font-size:0.9rem;margin-bottom:8px">버전 기록 (최근 20개)</h3>
+            <div class="snap-list" id="snap-list"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <span>자소서 본문은 서버로 전송되지 않으며 이 브라우저(localStorage)에만 저장됩니다.</span>
+      <a href="count.html">글자수 세기</a>
+      <a href="presets/index.html">기업 프리셋</a>
+      <a href="guide.html">글자수 규칙 가이드</a>
+    </footer>
+  </div>
+  <script type="module" src="js/workspace.js"></script>
+</body>
+</html>

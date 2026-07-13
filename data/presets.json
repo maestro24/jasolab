@@ -1,0 +1,332 @@
+{
+  "updated": "2026-07-13",
+  "note": "공개 채용공고·취업 커뮤니티 기반. 실제 공고를 반드시 확인하세요. 문항 구성과 글자수는 시즌·직무별로 달라질 수 있습니다.",
+  "companies": [
+    {
+      "id": "samsung-electronics",
+      "name": "삼성전자",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·입사 후 포부", "limit": 700, "unit": "chars_with_space" },
+        { "type": "성장과정(영향을 준 사건·인물)", "limit": 1500, "unit": "chars_with_space" },
+        { "type": "사회이슈 견해", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "직무 전문성·제품 사용 경험", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "에세이 4문항(직무 문항은 직군별 상이). 영문 작성 시 글자수 2배 허용. 공백 기준 미확인. 삼성 계열사 공통 포맷.",
+      "source": "https://community.linkareer.com/employment_data/4605711"
+    },
+    {
+      "id": "sk-hynix",
+      "name": "SK하이닉스",
+      "year": 2025,
+      "questions": [
+        { "type": "직무 관련 프로젝트·경험", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "직무 전문성 개발 노력", "limit": 600, "unit": "chars_with_space" },
+        { "type": "팀워크·협업 경험", "limit": 600, "unit": "chars_with_space" },
+        { "type": "가치관·개성·강점(해시태그, 선택)", "limit": 600, "unit": "chars_with_space" }
+      ],
+      "notes": "필수 3문항 + 선택 1문항(합격자 다수가 작성). 수시채용 기준. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-sk-hynix-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "lg-electronics",
+      "name": "LG전자",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·향후계획(직무 경험·강점 기반)", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "역경 극복 경험", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기부터 3문항→2문항 축소. 일부 가이드는 800자/600자 내외 작성 권장. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-lg-electronics-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "hyundai-motor",
+      "name": "현대자동차",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·입사 후 성장 목표", "limit": 800, "unit": "chars_with_space" },
+        { "type": "직무 핵심 역량과 확보 노력", "limit": 800, "unit": "chars_with_space" }
+      ],
+      "notes": "월 단위 수시채용, 공고·직무별 문항 상이(2문항 800자 구성이 일반적). 생산직은 3문항 각 800자. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-hyundai-motor-recruit-october-cover-letter-guide/"
+    },
+    {
+      "id": "kia",
+      "name": "기아",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·이루고 싶은 목표", "limit": 600, "unit": "chars_with_space" },
+        { "type": "직무 지원동기·직무 적합성", "limit": 750, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 일반직 기준. 엔지니어(생산직)는 3문항 각 1000자. 공고별 상이. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-kia-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "posco",
+      "name": "포스코",
+      "year": 2025,
+      "questions": [
+        { "type": "회사 선택 가치·포스코 부합 이유", "limit": 600, "unit": "chars_with_space" },
+        { "type": "직무 역량 학습·도전 경험과 발전 계획", "limit": 600, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 대졸 신입 기준, 직무 공통 2문항. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-posco-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "hanwha-systems",
+      "name": "한화(한화시스템 ICT)",
+      "year": 2025,
+      "questions": [
+        { "type": "직무 지원동기·커리어 계획", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "직무 강점·문제해결 사례", "limit": 700, "unit": "chars_with_space" },
+        { "type": "인재상(주인의식·차별성·변화수용성) 관련 경험", "limit": 700, "unit": "chars_with_space" }
+      ],
+      "notes": "한화그룹은 계열사별 수시채용으로 문항 상이. 본 데이터는 한화시스템 ICT 부문 2025 하반기 기준. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-hanwha-systems-ict-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "cj-cheiljedang",
+      "name": "CJ제일제당",
+      "year": 2025,
+      "questions": [
+        { "type": "입사 후 이루고 싶은 성장", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "지원동기·입사 후 성장 로드맵", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 신입 기준 2문항. 공고에 따라 1문항만 요구되는 경우도 있음. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-cj-cheiljedang-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "lotte-chemical",
+      "name": "롯데(롯데케미칼)",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기", "limit": 500, "unit": "chars_with_space" },
+        { "type": "성장과정(가장 중요한 사건)", "limit": 800, "unit": "chars_with_space" },
+        { "type": "교내외 활동 경험", "limit": 800, "unit": "chars_with_space" },
+        { "type": "직무 준비 과정·관련 경험", "limit": 800, "unit": "chars_with_space" }
+      ],
+      "notes": "롯데그룹은 계열사별 수시채용으로 문항 상이. 본 데이터는 롯데케미칼 2025년 9월 신입 공고 기준. 항목별 최소 300자 이상 입력 필수, 문항당 16줄 이내 제한 병행. 공백 기준 미확인.",
+      "source": "https://www.jobkorea.co.kr/company/1749358/keyword"
+    },
+    {
+      "id": "gs-caltex",
+      "name": "GS칼텍스",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·입사 후 목표·성장 계획", "limit": 500, "unit": "chars_with_space" },
+        { "type": "직무 핵심 역량·개발 노력", "limit": 500, "unit": "chars_with_space" },
+        { "type": "어려운 문제 해결 경험(상황-해결-결과)", "limit": 1500, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 신입 기준 3문항. 인턴 공고는 공백 포함 기준으로 안내된 사례 있음.",
+      "source": "https://www.haijob.co.kr/blog/2025-gs-caltex-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "doosan-construction",
+      "name": "두산(두산건설)",
+      "year": 2025,
+      "questions": [
+        { "type": "회사·직무 지원동기", "limit": 800, "unit": "chars_with_space" },
+        { "type": "장단점과 입사 후 활용·보완", "limit": 800, "unit": "chars_with_space" }
+      ],
+      "notes": "두산그룹은 계열사별 수시채용으로 문항 상이. 본 데이터는 두산건설 2025 하반기 기준. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-doosan-construction-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "ls-electric",
+      "name": "LS(LS ELECTRIC)",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "직무 필요 역량·확보 노력", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "장점과 단점", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "도전적 목표 달성 사례", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "LS그룹은 계열사별 수시채용으로 문항 상이. 본 데이터는 LS ELECTRIC 2025년 채용 커뮤니티 자료 기준(신뢰도 중하). 공백 기준 미확인.",
+      "source": "https://www.pagk.kr/%EC%9E%90%EC%86%8C%EC%84%9C-ls-electric-202/"
+    },
+    {
+      "id": "hd-hyundai",
+      "name": "HD현대",
+      "year": 2025,
+      "questions": [
+        { "type": "HD현대 적합 이유·이루고 싶은 꿈", "limit": 500, "unit": "chars_with_space" },
+        { "type": "직무 수행 노력·성장 계획", "limit": 500, "unit": "chars_with_space" },
+        { "type": "협업으로 공동 목표 달성 경험·역할", "limit": 500, "unit": "chars_with_space" },
+        { "type": "보람·행복을 느끼는 일(가치관)", "limit": 500, "unit": "chars_with_space" }
+      ],
+      "notes": "그룹 통합 신입(Junior Talent) 기준 4문항 각 500자. 연구직은 600/1000/600/600자 구성. 공백 기준 미확인.",
+      "source": "https://alivechangeup.com/jobreport/?bmode=view&idx=18525631"
+    },
+    {
+      "id": "korean-air",
+      "name": "대한항공",
+      "year": 2025,
+      "questions": [
+        { "type": "항공사·대한항공 지원동기와 입사 후 포부", "limit": 600, "unit": "chars_with_space" },
+        { "type": "채용해야 하는 사유·본인 경쟁력", "limit": 600, "unit": "chars_with_space" },
+        { "type": "소속감을 강하게 느낀 조직과 이유", "limit": 600, "unit": "chars_with_space" },
+        { "type": "인간관계 갈등 극복 전략", "limit": 600, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 일반직 기준 4문항 각 600자. 공백 기준 미확인.",
+      "source": "https://www.top-tier.co.kr/notice/getNoticeDetail.hs?noticeSeq=992&type=BT04"
+    },
+    {
+      "id": "kb-kookmin-bank",
+      "name": "KB국민은행",
+      "year": 2025,
+      "questions": [
+        { "type": "KB국민은행의 의미·목표와 실행계획(지원동기)", "limit": 2400, "unit": "bytes" },
+        { "type": "신뢰를 얻기 위해 노력한 경험", "limit": 1600, "unit": "bytes" },
+        { "type": "새로운 환경에서 주도적으로 대처한 경험", "limit": 1600, "unit": "bytes" },
+        { "type": "협업에서 중요한 요소와 관련 경험", "limit": 1600, "unit": "bytes" }
+      ],
+      "notes": "바이트 기준(공백 포함, 한글 2byte). 4문항 총 7,200byte. 시즌별 문항 문구 변동 있음.",
+      "source": "https://jasoseohero.com/entry/KB%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89-%EC%8B%A0%EC%9E%85%ED%96%89%EC%9B%90-%EC%B1%84%EC%9A%A9-%EC%9E%90%EA%B8%B0%EC%86%8C%EA%B0%9C%EC%84%9C-%EC%9E%91%EC%84%B1-%ED%8C%81-%ED%95%A9%EA%B2%A9"
+    },
+    {
+      "id": "shinhan-bank",
+      "name": "신한은행",
+      "year": 2025,
+      "questions": [
+        { "type": "차별화된 강점과 발휘 방안", "limit": 800, "unit": "chars_with_space" },
+        { "type": "가치관이 타인과 충돌한 경험과 해결", "limit": 800, "unit": "chars_with_space" },
+        { "type": "핵심가치(바르게·빠르게·다르게) 연계 경험", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "입행 10~20년 후 커리어 비전", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 신입행원 기준 4문항. 선택형 추가 자기소개(500자) 문항이 붙는 시즌도 있음. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-shinhan-bank-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "hana-bank",
+      "name": "하나은행",
+      "year": 2025,
+      "questions": [
+        { "type": "입행 후 목표·성장 계획", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "설득 경험과 본인의 장단점", "limit": 800, "unit": "chars_with_space" },
+        { "type": "차별화 역량과 은행에서의 발휘 방안", "limit": 800, "unit": "chars_with_space" },
+        { "type": "은행 산업 전망·하나은행 발전 방향 제안", "limit": 800, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기(종합금융·ICT·디지털/AI) 기준. 상반기는 4문항 각 800자(공백 포함)였음. 지역인재 부문은 4번 문항 상이.",
+      "source": "https://www.haijob.co.kr/blog/2025-hana-bank-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "woori-bank",
+      "name": "우리은행",
+      "year": 2025,
+      "questions": [
+        { "type": "지원 부문 지원동기·노력", "limit": 800, "unit": "chars_with_space" },
+        { "type": "고치고 싶은 성격과 이유", "limit": 600, "unit": "chars_with_space" },
+        { "type": "부문별 문항(프로젝트·경험 등)", "limit": 800, "unit": "chars_with_space" }
+      ],
+      "notes": "공통 2문항 + 부문별 1문항(개인·기업금융/지역인재/TECH별 상이). 항목별 600~800자. 2025 상반기 IT/디지털 부문 합격 자소서 기준. 공백 기준 미확인.",
+      "source": "https://linkareer.com/cover-letter/35610"
+    },
+    {
+      "id": "ibk",
+      "name": "IBK기업은행",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기(IBK 선택 이유)", "limit": 1500, "unit": "bytes" },
+        { "type": "은행원 경쟁력·역량 노력(학업/대외활동/취업준비/채용이유 각 400byte)", "limit": 1600, "unit": "bytes" }
+      ],
+      "notes": "바이트 기준. 2번 문항은 4개 세부 항목 각 400byte로 분할 작성. 2025 하반기 신입행원 기준.",
+      "source": "https://www.haijob.co.kr/blog/2025-ibk-bank-recruit-cover-letter-guide/"
+    },
+    {
+      "id": "nh-bank",
+      "name": "NH농협은행",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·금융전문가 성장 노력", "limit": 700, "unit": "chars_with_space" },
+        { "type": "협업 시 차별화된 장점과 활용 방안", "limit": 700, "unit": "chars_with_space" },
+        { "type": "윤리의식(정직·원칙) 실천 경험", "limit": 700, "unit": "chars_with_space" },
+        { "type": "디지털 서비스 벤치마킹 제안", "limit": 700, "unit": "chars_with_space" },
+        { "type": "추가 자기소개(자유)", "limit": 700, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 6급 기준 5문항 각 최대 700자. 일부 공고는 byte 기준(최소 200byte~최대 1000byte)으로 안내된 출처도 있어 공고 확인 필요.",
+      "source": "https://www.haijob.co.kr/blog/2025-nh-bank-recruit-secondhalf-cover-letter-guide/"
+    },
+    {
+      "id": "samsung-life",
+      "name": "삼성생명",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기·입사 후 이루고 싶은 꿈", "limit": 700, "unit": "chars_with_space" },
+        { "type": "성장과정(영향을 준 사건·인물)", "limit": 1500, "unit": "chars_with_space" },
+        { "type": "사회이슈 견해", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "직무 차별화 강점", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "삼성 공통 에세이 포맷(총 4200자). 영문 작성 시 2배 허용. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2025-samsung-recruit-secondhalf-jaseo-guide/"
+    },
+    {
+      "id": "naver",
+      "name": "네이버",
+      "year": 2025,
+      "questions": [
+        { "type": "지원 부문 결정 계기·입사 후 성장 목표", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 팀네이버 신입 공채 기준 필수 2문항(계기·성장 목표 / 도전·변화 시도 경험) + 선택 포트폴리오(GitHub 등 URL·자료 첨부). 2번 문항 글자수는 공개 출처에서 미확인이라 제외. 공백 기준 미확인.",
+      "source": "https://recruit.navercorp.com/micro/teamnaver/2025"
+    },
+    {
+      "id": "kakao",
+      "name": "카카오",
+      "year": 2026,
+      "questions": [
+        { "type": "문제 본질(Why) 탐구 경험", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "완성도를 위해 몰입한 경험·극복 과정", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "지원 분야별 문항(관심 분야·계기 등)", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "2026 신입크루 공채 기준 3문항 모두 1000자. 3번은 직군(Tech/기획/디자인 등)별 상이. 공백 기준 미확인.",
+      "source": "https://www.haijob.co.kr/blog/2026-kakao-group-recruit-cover-letter-guide/"
+    },
+    {
+      "id": "woowahan",
+      "name": "우아한형제들(배달의민족)",
+      "year": 2025,
+      "questions": [
+        { "type": "지원동기", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "희망 직무 경쟁력(프로젝트·교육·경험)", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "공동 목표 협업 경험(배경-역할-결과)", "limit": 1000, "unit": "chars_with_space" }
+      ],
+      "notes": "과거 공채·인턴 공채 문항 기준(잡코리아 자소서 항목 집계). 현재는 직무별 수시채용으로 공고마다 문항·형식 상이(자유 양식인 경우도 있음). 공백 기준 미확인.",
+      "source": "https://www.jobkorea.co.kr/company/1450187/keyword"
+    },
+    {
+      "id": "kepco",
+      "name": "한국전력공사",
+      "year": 2025,
+      "questions": [
+        { "type": "인재상 2가지 선택·부합 이유", "limit": 700, "unit": "chars_with_space" },
+        { "type": "지원동기·직무 역량개발 노력·회사 이슈 견해", "limit": 700, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 하반기 4(나)직급 대졸수준 기준. 자소서는 필기전형 합격 후 면접 대상자만 작성. 협업·갈등 경험 문항이 추가로 있으나 글자수 미확인이라 제외. 공백 기준 미확인.",
+      "source": "https://jasoseol.com/recruit/100049"
+    },
+    {
+      "id": "incheon-airport",
+      "name": "인천국제공항공사",
+      "year": 2025,
+      "questions": [
+        { "type": "공사의 나아갈 방향·지원동기", "limit": 600, "unit": "chars_with_space" },
+        { "type": "직무역량 개발 과정·성과·기여 방안", "limit": 600, "unit": "chars_with_space" },
+        { "type": "장단점과 단점 극복 사례", "limit": 600, "unit": "chars_with_space" },
+        { "type": "인생 가치관과 가치관 충돌 극복 경험", "limit": 600, "unit": "chars_with_space" }
+      ],
+      "notes": "2025 NCS 기반 신입 채용 기준 4문항 각 600자. 공백 기준 미확인.",
+      "source": "https://jasoseol.com/recruit/100214"
+    },
+    {
+      "id": "korail",
+      "name": "한국철도공사(코레일)",
+      "year": 2025,
+      "questions": [
+        { "type": "팀 내 갈등 상황·해결 과정과 배운 점", "limit": 1000, "unit": "chars_with_space" },
+        { "type": "회사 최근 이슈에 대한 견해", "limit": 400, "unit": "chars_with_space" }
+      ],
+      "notes": "신뢰도 낮음 — 2025 하반기(토목·전기통신) 커뮤니티 정보 기준. 갈등 문항은 공백 포함 700자 이상~1000자, 이슈 문항은 400자(800byte). 직무능력 문항은 공백 포함 800byte(400byte 미만 제출 불가) 등 문항별 단위가 혼재하므로 반드시 공고 원문 확인.",
+      "source": "http://zieumworks.com/2025/11/11/"
+    }
+  ]
+}

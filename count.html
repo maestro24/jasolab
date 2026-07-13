@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2P73L29BH7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2P73L29BH7');
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자소서 글자수 세기 — 공백·바이트·원고지 동시 확인 | 자소서랩</title>
+  <meta name="description" content="자소서 글자수를 공백 포함/제외, 바이트(2byte 규칙), 200자 원고지 매수로 동시에 확인하세요. 문장 수·평균 문장 길이 분석까지. 붙여넣는 즉시 계산, 서버 전송 없음." />
+  <link rel="canonical" href="https://maestro24.github.io/jasolab/count.html" />
+  <meta property="og:title" content="자소서 글자수 세기 — 공백·바이트·원고지" />
+  <meta property="og:description" content="글자수 3종 동시 확인 + 문장 분석. 서버 전송 없음." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maestro24.github.io/jasolab/count.html" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="theme-color" content="#f8f7fc" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23A78BFA'/><stop offset='1' stop-color='%236D3EE0'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><rect x='24' y='20' width='52' height='60' rx='8' fill='white' opacity='.95'/><rect x='32' y='32' width='36' height='5' rx='2.5' fill='%23A78BFA'/><rect x='32' y='44' width='36' height='5' rx='2.5' fill='%23d5c8f7'/><rect x='32' y='56' width='24' height='5' rx='2.5' fill='%23d5c8f7'/></svg>" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "자소서 글자수는 공백을 포함해서 세나요?",
+        "acceptedAnswer": { "@type": "Answer", "text": "기업마다 다릅니다. 대부분의 채용 시스템은 공백 포함 글자수를 기준으로 하지만, 일부는 공백 제외나 바이트 기준을 씁니다. 실제 지원서 입력창에 붙여넣어 최종 확인하는 것이 가장 안전하며, 자소서랩은 세 가지 기준을 동시에 보여줍니다." }
+      },
+      {
+        "@type": "Question",
+        "name": "바이트 계산은 어떻게 하나요?",
+        "acceptedAnswer": { "@type": "Answer", "text": "한국 채용 시스템 관행상 한글·전각 문자는 2바이트, 영문·숫자·공백은 1바이트로 계산합니다. 예를 들어 '자소서 ABC'는 한글 3자(6바이트) + 공백 1바이트 + 영문 3바이트 = 10바이트입니다." }
+      },
+      {
+        "@type": "Question",
+        "name": "입력한 자소서가 서버로 전송되나요?",
+        "acceptedAnswer": { "@type": "Answer", "text": "아니요. 모든 계산은 브라우저 안에서 이루어지며 본문이 외부로 전송되지 않습니다." }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <a class="brand" href="index.html">📝 자소서랩</a>
+      <nav class="nav">
+        <a href="index.html">문항 관리</a>
+        <a href="count.html" class="active">글자수 세기</a>
+        <a href="presets/index.html">기업 프리셋</a>
+        <a href="guide.html">가이드</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div>
+        <h1 class="page-title">자소서 글자수 세기</h1>
+        <p class="page-desc">붙여넣는 즉시 공백 포함/제외·바이트·원고지 매수를 동시에. 본문은 서버로 전송되지 않아요.</p>
+      </div>
+      <textarea class="editor" id="in-text" style="min-height:38vh" placeholder="여기에 자소서를 붙여넣으세요"></textarea>
+      <div class="counter-bar" id="counter-bar"><span>입력을 시작하면 바로 계산돼요</span></div>
+      <div class="card">
+        <p style="font-size:0.9rem">여러 회사 자소서를 관리하고 버전까지 남기려면 → <a href="index.html"><b>문항 관리 작업대</b></a> (무료, 가입 없음)</p>
+      </div>
+    </main>
+
+    <section class="seo-content" aria-label="글자수 기준 안내">
+      <h2>공백 포함? 제외? 바이트? — 기업마다 다릅니다</h2>
+      <p>같은 700자 제한이어도 공백 포함이냐 제외냐에 따라 실제로 쓸 수 있는 분량이 10% 이상 달라집니다. 바이트 기준 회사(한글 2byte)는 한글 기준 글자수의 절반만 입력할 수 있어 특히 주의가 필요합니다. 자소서랩은 세 기준을 한 화면에서 보여주므로, 어떤 회사의 입력창에도 당황하지 않고 대비할 수 있습니다. 자세한 규칙은 <a href="guide.html">글자수 규칙 가이드</a>에, 기업별 제한은 <a href="presets/index.html">기업 프리셋</a>에 정리되어 있습니다.</p>
+    </section>
+
+  <aside class="promo" data-coupang>
+    <div class="coupang-wrap">
+      <a href="https://link.coupang.com/a/flCfhuxEJM" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/1006097?trackingCode=AF8748009&subId=&traceId=V0-301-879dd1202e5c73b2-I1006097&w=728&h=90" alt="쿠팡 파트너스 배너" style="max-width:100%;height:auto" loading="lazy"></a>
+    </div>
+    <p class="promo-disclosure">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+  </aside>
+  <script>
+    setTimeout(function () {
+      document.querySelectorAll('[data-coupang]').forEach(function (el) {
+        var f = el.querySelector('iframe');
+        var m = el.querySelector('img');
+        var ok = (f && f.getBoundingClientRect().height >= 10) || (m && m.complete && m.naturalWidth > 0);
+        if (!ok) el.hidden = true;
+      });
+    }, 4000);
+  </script>
+
+    <footer class="footer">
+      <a href="index.html">문항 관리</a>
+      <a href="presets/index.html">기업 프리셋</a>
+      <a href="guide.html">가이드</a>
+    </footer>
+  </div>
+  <script type="module">
+    import { countAll } from './js/counter.js';
+    const $t = document.getElementById('in-text');
+    const $bar = document.getElementById('counter-bar');
+    const render = () => {
+      const c = countAll($t.value);
+      $bar.innerHTML =
+        `<span>공백포함 <b>${c.withSpace.toLocaleString()}</b>자</span>` +
+        `<span>공백제외 <b>${c.noSpace.toLocaleString()}</b>자</span>` +
+        `<span>바이트 <b>${c.bytes.toLocaleString()}</b></span>` +
+        `<span>원고지 <b>${c.manuscript}</b>매</span>` +
+        `<span>문장 <b>${c.sentences}</b>개 (평균 ${c.avgSentence}자)</span>`;
+    };
+    $t.addEventListener('input', render);
+    render();
+  </script>
+  <div class="side-rail side-l" data-coupang>
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>new PartnersCoupang.G({ id: 1006093, template: "carousel", trackingCode: "AF8748009", width: "160", height: "600", tsource: "" });</script>
+  </div>
+  <div class="side-rail side-r" data-coupang>
+    <script>new PartnersCoupang.G({ id: 1006093, template: "carousel", trackingCode: "AF8748009", width: "160", height: "600", tsource: "" });</script>
+  </div>
+</body>
+</html>
