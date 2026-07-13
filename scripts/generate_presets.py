@@ -12,6 +12,7 @@ import shutil
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 SITE_URL = "https://maestro24.github.io/jasolab"
+OG_IMAGE = "https://maestro24.github.io/jasolab/assets/og-image.png"
 
 FAVICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23A78BFA'/><stop offset='1' stop-color='%236D3EE0'/></linearGradient></defs><rect width='100' height='100' rx='18' fill='url(%23g)'/><rect x='24' y='20' width='52' height='60' rx='8' fill='white' opacity='.95'/><rect x='32' y='32' width='36' height='5' rx='2.5' fill='%23A78BFA'/><rect x='32' y='44' width='36' height='5' rx='2.5' fill='%23d5c8f7'/><rect x='32' y='56' width='24' height='5' rx='2.5' fill='%23d5c8f7'/></svg>"
 
@@ -69,6 +70,11 @@ def shell(*, title, desc, canonical, depth, body, jsonld=None):
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{canonical}" />
 <meta property="og:locale" content="ko_KR" />
+<meta property="og:image" content="{OG_IMAGE}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{title}" />
+<meta name="twitter:description" content="{desc}" />
+<meta name="twitter:image" content="{OG_IMAGE}" />
 <meta name="theme-color" content="#f8f7fc" />
 <link rel="icon" href="{FAVICON}" />
 {ld}
