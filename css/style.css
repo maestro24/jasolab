@@ -93,10 +93,12 @@ h1.page-title { font-size: 1.3rem; font-weight: 900; line-height: 1.35; }
 
 /* 에디터 */
 .editor-top { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.editor-top .input { flex: 1; min-width: 160px; font-weight: 800; }
-.limit-box { display: flex; gap: 6px; align-items: center; }
-.limit-box input { width: 90px; text-align: right; }
-.limit-box select { width: auto; }
+.editor-top > .input { flex: 1 1 200px; min-width: 0; font-weight: 800; }
+.limit-box { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; max-width: 100%; min-width: 0; }
+.limit-box .input { flex: 0 1 auto; width: auto; min-width: 0; }
+.limit-box input.input { width: 90px; text-align: right; }
+.limit-box select.input { max-width: 150px; }
+#q-preset { max-width: 210px; }
 textarea.editor {
   width: 100%; min-height: 46vh; resize: vertical;
   background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
